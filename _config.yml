@@ -1,18 +1,18 @@
-title:            Site Title
-description:      Describe your website.
+title:            Snapworld Graph Processing
+description:      Snapworld Programming Framework
 # Your site's domain goes here. Leave localhost server or blank when working locally.
 url:              http://localhost:4000
 
 # Owner/author information
 owner:
-  name:           Your Name
-  avatar:         bio-photo.jpg
-  bio:            "Describe your self."
-  email:          your@email.com
+  name:           Snapworld
+  avatar:         stanford.jpg
+  bio:            "A distributed framework for processing terrascale graphs."
+  # email:          your@email.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   twitter:        
   facebook:       
-  github:         
+  github:         snap-stanford/snapworld
   stackoverflow: 
   linkedin:       
   instagram:      
@@ -34,23 +34,25 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: About
-    url: /about/
-  - title: Posts
-    url: /posts/
-  - title: Theme Setup
-    url: /theme-setup/
-  - title: Made Mistakes
-    url: http://mademistakes.com
+  - title: Home
+    url: /
+  - title: Installation
+    url: /install/
+  - title: Experiments
+    url: /experiments/
+  - title: Documentation
+    url: /docs/
+  - title: Snap
+    url: http://snap.stanford.edu
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    America/Los_Angeles
 future:      true
 pygments:    true
 markdown:    kramdown
 
-# https://github.com/mojombo/jekyll/wiki/Permalinks
+# http://jekyllrb.com/docs/permalinks/
 permalink:   /:categories/:title/
 
 kramdown:
