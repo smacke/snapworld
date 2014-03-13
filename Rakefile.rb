@@ -3,7 +3,6 @@ require "bundler/setup"
 require "jekyll"
 require "stringex"
 require "tmpdir"
-require "shellwords"
 
 ## -- Config -- ##
 
@@ -20,11 +19,11 @@ GITHUB_REPONAME = "smacke/snapworld" # repo to publish to
 namespace :site do
   desc "Compile less and minify css"
   task :grunt do
-    sh grunt
+    sh 'grunt'
   end
 
   desc "Generate blog files"
-  task :generate do
+  task :generate => [:grunt] do
     Jekyll::Site.new(Jekyll.configuration({
       "source"      => ".",
       "destination" => "_site"
